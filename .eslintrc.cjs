@@ -9,11 +9,6 @@ module.exports = {
   ignorePatterns: ["dist", ".eslintrc.cjs"],
   parser: "@typescript-eslint/parser",
   plugins: ["react-refresh"],
-  server: {
-    watch: {
-      usePolling: true,
-    },
-  },
   rules: {
     "react-refresh/only-export-components": [
       "warn",

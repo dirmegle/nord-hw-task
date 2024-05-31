@@ -7,4 +7,9 @@ export default defineConfig({
     ? `/${process.env.GITHUB_REPOSITORY.split("/")[1]}/`
     : "/",
   plugins: [react()],
+  server: {
+    watch: {
+      usePolling: true,
+    },
+  },
 });
