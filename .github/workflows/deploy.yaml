@@ -36,7 +36,7 @@ jobs:
 
       ## Build the source code
       - name: Build
-        run: npm run build
+        run: PUBLIC_URL=/${{ github.event.repository.name }} npm run build
       - name: Create 404 page
         run: cp ./dist/index.html ./dist/404.html
       - name: Upload artifact
