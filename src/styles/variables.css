@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  /* Border radius */
+  --border-radius-s: 8px;
+
+  /* Typography */
+  --font-family: "Montserrat", sans-serif;
+
+  --font-size-headline: 2rem;
+  --font-weight-headline: 600;
+  --font-line-height-headline: 1.875rem;
+
+  --font-size-label: 1rem;
+  --font-weight-label: 400;
+  --font-line-height-label: 1.5rem;
+
+  --font-size-body: 1rem;
+  --font-weight-body: 300;
+  --font-line-height-body: 1.5rem;
+
+  /* Colors */
+}

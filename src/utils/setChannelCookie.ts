@@ -11,8 +11,7 @@ const setChannelCookie = (queryParameters: URLSearchParams) => {
   if (channelValue === null) {
     channelValue = "direct";
   }
-  console.log(getExpirationDate());
-  document.cookie = `channel=${channelValue}; expires=${getExpirationDate()}`;
+  document.cookie = `EGLEDIRMEITYTE_channel=${channelValue}; expires=${getExpirationDate()}`;
 };
 
 export default setChannelCookie;
