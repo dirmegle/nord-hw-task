@@ -25,7 +25,7 @@ export default function HomePage() {
           remains safe from cyber threats. <br />
           Click the link below and leave us a message.
         </p>
-        <Button onClick={() => navigate("/contact")}>Leave message now</Button>
+        <Button onClick={() => navigate("/contacts")}>Leave message now</Button>
       </div>
       <div className={styles.image}>
         <img src={WebIllustration} alt="Stay connected, securely" />

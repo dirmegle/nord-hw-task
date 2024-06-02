@@ -17,7 +17,7 @@ export default function ContactForm() {
     getInitialErrors(contactFormConfig)
   );
 
-  const [formValues, setFormValues] = useState<{ [key: string]: string }>({});
+  const [formValues, setFormValues] = useState<Record<string, string>>({});
   const [isSubmitButtonDisabled, setSubmitButtonStatus] = useState(true);
   const [isMessageSent, setMessageSentStatus] = useState(false);
   const navigate = useNavigate();
