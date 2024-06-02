@@ -10,3 +10,7 @@ export interface FormConfig {
 export interface FormObject {
   [key: string]: FormDataEntryValue;
 }
+
+export interface FormErrors {
+  [name: string]: string | undefined;
+}

@@ -20,4 +20,13 @@
   --font-line-height-body: 1.5rem;
 
   /* Colors */
+  --primary-background-color: #e2dfd0;
+  --primary-accent-color-800: #f97300;
+  --primary-accent-color-600: #fe9436;
+  --secondary-accent-color: #524c42;
+  --error-accent-color: #c40c0c;
+  --primary-font-color: #32012f;
+  --secondary-font-color: #e2dfd0;
+  --error-font-color: #c40c0c;
+  --focus-color: #41b06e;
 }

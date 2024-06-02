@@ -10,8 +10,9 @@ interface InputProps {
   type?: string;
   errorMessage?: string;
   hasError?: boolean;
-  onChange?: (
-    e: ChangeEvent<HTMLInputElement> | ChangeEvent<HTMLTextAreaElement>
+  onChange?: (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => void;
+  onBlur?: (
+    e: React.FocusEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => void;
 }
 
@@ -24,6 +25,7 @@ export default function Input({
   type,
   hasError = false,
   onChange,
+  onBlur,
 }: InputProps) {
   const inputClasses = classNames(styles.input, {
     [styles.inputInError]: hasError,
@@ -41,6 +43,7 @@ export default function Input({
         placeholder={placeholder}
         className={inputClasses}
         onChange={onChange}
+        onBlur={onBlur}
       />
       {hasError && <p className={styles.errorMessage}>{errorMessage}</p>}
     </div>
@@ -55,9 +58,10 @@ export function Textarea({
   id,
   hasError = false,
   onChange,
+  onBlur,
 }: InputProps) {
-  const inputClasses = classNames(styles.textfield, {
-    [styles.textFieldInError]: hasError,
+  const inputClasses = classNames(styles.input, {
+    [styles.inputInError]: hasError,
   });
   return (
     <div>
@@ -71,6 +75,7 @@ export function Textarea({
         placeholder={placeholder}
         className={inputClasses}
         onChange={onChange}
+        onBlur={onBlur}
       />
       {hasError && <p className={styles.errorMessage}>{errorMessage}</p>}
     </div>
