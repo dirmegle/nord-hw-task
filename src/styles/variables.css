@@ -8,25 +8,29 @@
   --font-family: "Montserrat", sans-serif;
 
   --font-size-headline: 2rem;
-  --font-weight-headline: 600;
-  --font-line-height-headline: 1.875rem;
+  --font-weight-headline: 700;
+  --font-line-height-headline: 3rem;
 
   --font-size-label: 1rem;
   --font-weight-label: 400;
   --font-line-height-label: 1.5rem;
 
   --font-size-body: 1rem;
-  --font-weight-body: 300;
+  --font-weight-body: 400;
   --font-line-height-body: 1.5rem;
 
   /* Colors */
-  --primary-background-color: #e2dfd0;
+  --primary-background-color-800: #eeeeee;
+  --primary-background-color-600: #fefefe;
   --primary-accent-color-800: #f97300;
   --primary-accent-color-600: #fe9436;
   --secondary-accent-color: #524c42;
   --error-accent-color: #c40c0c;
   --primary-font-color: #32012f;
-  --secondary-font-color: #e2dfd0;
+  --secondary-font-color: #fefefe;
   --error-font-color: #c40c0c;
   --focus-color: #41b06e;
+
+  /* Box shadow */
+  --box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }

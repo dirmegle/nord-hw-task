@@ -1,16 +1,20 @@
 import { createBrowserRouter } from "react-router-dom";
+import Layout from "../layouts/Layout";
 import HomePage from "../pages/HomePage";
 import ContactPage from "../pages/ContactPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <HomePage />,
+    element: <Layout />,
     errorElement: <>404 not found page</>,
-  },
-  {
-    path: "/contact",
-    element: <ContactPage />,
+    children: [
+      { path: "/", element: <HomePage /> },
+      {
+        path: "contact",
+        element: <ContactPage />,
+      },
+    ],
   },
 ]);
 

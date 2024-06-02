@@ -1,0 +1,17 @@
+.containerForm {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+}
+
+.containerButton {
+  margin-top: 2rem;
+}
+
+.paragraphText {
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-body);
+  line-height: var(--font-line-height-body);
+  color: var(--primary-font-color);
+  margin-bottom: 2rem;
+}

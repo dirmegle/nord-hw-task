@@ -33,7 +33,7 @@ export default function Input({
 
   return (
     <div>
-      <label htmlFor={id} className={label}>
+      <label htmlFor={id} className={styles.label}>
         {label}
       </label>
       <input
@@ -65,7 +65,7 @@ export function Textarea({
   });
   return (
     <div>
-      <label htmlFor={id} className={label}>
+      <label htmlFor={id} className={styles.label}>
         {label}
       </label>
       <textarea

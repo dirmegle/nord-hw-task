@@ -34,10 +34,11 @@
 }
 
 .label {
-  color: black;
+  color: var(--primary-font-color);
   font-size: var(--font-size-label);
   font-weight: var(--font-weight-label);
   line-height: var(--font-line-height-label);
+  margin-bottom: 1rem;
 }
 
 .errorMessage {
